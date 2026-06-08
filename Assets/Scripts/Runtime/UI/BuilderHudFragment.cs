@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 namespace Runtime.UI
@@ -7,6 +8,9 @@ namespace Runtime.UI
     {
         [SerializeField] 
         private RobotBuilder _builder;
+
+        [SerializeField] 
+        private TMP_Text _weightText, _powerText;
 
         [SerializeField] 
         private List<RobotPartAsset> _heads, _torsos, _legs;
@@ -20,6 +24,15 @@ namespace Runtime.UI
             _builder.SetPart(_heads[0]);
             _builder.SetPart(_torsos[0]);
             _builder.SetPart(_legs[0]);
+        }
+
+        private void OnEnable() => _builder.OnStatsChanged += UpdateStatsUI;
+        private void OnDisable() => _builder.OnStatsChanged -= UpdateStatsUI;
+        
+        private void UpdateStatsUI(float weight, float power)
+        {
+            _weightText.text = $"Weight: {weight:0.0}";
+            _powerText.text = $"Power: {power:0.0}";
         }
 
         public void PreviousHead()
