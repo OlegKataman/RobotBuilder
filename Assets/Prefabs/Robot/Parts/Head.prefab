@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5909064027910873415}
   - component: {fileID: 4665291459138768417}
   - component: {fileID: 1749835811634778289}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eye Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,8 @@ GameObject:
   - component: {fileID: 7480511086764686055}
   - component: {fileID: 6517370801021213044}
   - component: {fileID: 7998943557459838476}
-  m_Layer: 0
+  - component: {fileID: 7197558311701568292}
+  m_Layer: 3
   m_Name: Head Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,6 +183,27 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7197558311701568292
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6504909298269695995}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8988111742364396018
 GameObject:
   m_ObjectHideFlags: 0
@@ -193,7 +215,7 @@ GameObject:
   - component: {fileID: 7521907114007724303}
   - component: {fileID: 5065149148156222802}
   - component: {fileID: 3413234019242320092}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eye Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,7 +304,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4709284588889431693, guid: d72ead74e36a2b54a84854239c15eb77, type: 3}
       propertyPath: m_Name
-      value: Part Variant
+      value: Head
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709284588889431693, guid: d72ead74e36a2b54a84854239c15eb77, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5161404291446390478, guid: d72ead74e36a2b54a84854239c15eb77, type: 3}
       propertyPath: m_LocalPosition.x

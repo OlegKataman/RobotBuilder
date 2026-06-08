@@ -1,19 +1,21 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Runtime
 {
     public sealed class RobotPartInstance : MonoBehaviour
     {
-        private Renderer _renderer;
+        private readonly List<Renderer> _renderers = new();
         
         public void Init(RobotPartAsset asset)
         {
-            _renderer = GetComponentInChildren<Renderer>();
+            GetComponentsInChildren(_renderers);
         }
 
         public void SetColor(Color color)
         {
-            _renderer.material.color = color;
+            foreach (var r in _renderers)
+                r.material.color = color;
         }
     }
 }

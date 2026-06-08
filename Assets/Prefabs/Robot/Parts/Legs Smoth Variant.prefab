@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7799563511683475184}
   - component: {fileID: 7219984180176303941}
   - component: {fileID: 6271790260058343028}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 6557741493166796244}
   - component: {fileID: 5510830406839838605}
   - component: {fileID: 7237828230203234938}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Model (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +238,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 78039378879006987, guid: 7d519298c56d841408f554ea1492f5e6, type: 3}
       propertyPath: m_Name
-      value: Legs Variant
+      value: Legs Smoth Variant
       objectReference: {fileID: 0}
     - target: {fileID: 571676624735185224, guid: 7d519298c56d841408f554ea1492f5e6, type: 3}
       propertyPath: m_LocalPosition.x

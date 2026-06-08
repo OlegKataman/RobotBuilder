@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4227136590554342012}
   - component: {fileID: 6225439358287407057}
   - component: {fileID: 2727845248340625865}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eye Model (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 7312367423089119685}
   - component: {fileID: 4143832547249993705}
   - component: {fileID: 1961568473335696697}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eye Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,7 +191,8 @@ GameObject:
   - component: {fileID: 8727685228991271305}
   - component: {fileID: 1148477851322377380}
   - component: {fileID: 6220304434568857655}
-  m_Layer: 0
+  - component: {fileID: 3289036144230327579}
+  m_Layer: 3
   m_Name: Head Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,6 +273,27 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &3289036144230327579
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9012103894107426242}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &733671896894321224
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -282,7 +304,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8866170317772332244, guid: eecee333716f60c4eb85c67ef828fd48, type: 3}
       propertyPath: m_Name
-      value: Part Variant
+      value: Head Smooth Variant
       objectReference: {fileID: 0}
     - target: {fileID: 9074953736006270103, guid: eecee333716f60c4eb85c67ef828fd48, type: 3}
       propertyPath: m_LocalPosition.x
