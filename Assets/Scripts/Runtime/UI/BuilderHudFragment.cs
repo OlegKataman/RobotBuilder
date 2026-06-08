@@ -35,6 +35,11 @@ namespace Runtime.UI
             _powerText.text = $"Power: {power:0.0}";
         }
 
+        public void OnTestButtonClick()
+        {
+            FindAnyObjectByType<Robot>().PlayTestAction();
+        }
+
         public void PreviousHead()
         {
             _headIndex = (_headIndex - 1 + _heads.Count) % _heads.Count;

@@ -99,7 +99,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6896143487431940272}
-  - component: {fileID: -813915134177385793}
+  - component: {fileID: 360804798069075403}
   m_Layer: 0
   m_Name: Robot
   m_TagString: Untagged
@@ -125,7 +125,7 @@ Transform:
   - {fileID: 763667243624928329}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-813915134177385793
+--- !u!114 &360804798069075403
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,9 +134,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7511859080799040163}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb9b35cfaa65418a94d8161834a86a9a, type: 3}
+  m_Script: {fileID: 11500000, guid: 577fdb75094c46789a3b37fb368eb8f5, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Runtime.RotateByDrag
+  m_EditorClassIdentifier: Assembly-CSharp::Runtime.Robot
   speed: 5
 --- !u!1 &8921039960888641508
 GameObject:
