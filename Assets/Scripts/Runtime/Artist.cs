@@ -21,10 +21,13 @@ namespace Runtime
         private void Update()
         {
             if (!Input.GetMouseButtonDown(0)) return;
+            
+            if (_current == null)
+                return;
                 
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (!Physics.Raycast(ray, out var hit, 500, _robotLayer)) return;
-
+            
             var robotPartInstance = hit.transform.GetComponentInParent<RobotPartInstance>();
             robotPartInstance.SetColor(_current.color);
         }
