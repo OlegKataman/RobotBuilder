@@ -1,0 +1,61 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Runtime.UI
+{
+    public sealed class BuilderHudFragment : MonoBehaviour
+    {
+        [SerializeField] 
+        private RobotBuilder _builder;
+
+        [SerializeField] 
+        private List<RobotPartAsset> _heads, _torsos, _legs;
+
+        private int _headIndex;
+        private int _torsoIndex;
+        private int _legsIndex;
+
+        private void Start()
+        {
+            _builder.SetPart(_heads[0]);
+            _builder.SetPart(_torsos[0]);
+            _builder.SetPart(_legs[0]);
+        }
+
+        public void PreviousHead()
+        {
+            _headIndex = (_headIndex - 1 + _heads.Count) % _heads.Count;
+            _builder.SetPart(_heads[_headIndex]);
+        }
+
+        public void NextHead()
+        {
+            _headIndex = (_headIndex + 1) % _heads.Count;
+            _builder.SetPart(_heads[_headIndex]);
+        }
+
+        public void PreviousTorso()
+        {
+            _torsoIndex = (_torsoIndex - 1 + _torsos.Count) % _torsos.Count;
+            _builder.SetPart(_torsos[_torsoIndex]);
+        }
+
+        public void NextTorso()
+        {
+            _torsoIndex = (_torsoIndex + 1) % _torsos.Count;
+            _builder.SetPart(_torsos[_torsoIndex]);
+        }
+
+        public void PreviousLegs()
+        {
+            _legsIndex = (_legsIndex - 1 + _legs.Count) % _legs.Count;
+            _builder.SetPart(_legs[_legsIndex]);
+        }
+
+        public void NextLegs()
+        {
+            _legsIndex = (_legsIndex + 1) % _legs.Count;
+            _builder.SetPart(_legs[_legsIndex]);
+        }
+    }
+}
